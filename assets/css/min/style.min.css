@@ -38,7 +38,7 @@ div:not(.row)+.row{padding-top:120px}
 .row-produkt_ubersicht h3:after{content:">";height:100%;position:absolute;top:-6px;font-size:40px;font-family:"Lato",sans-serif;font-weight:300;right:0}
 .row-produkt_ubersicht .kachel img{max-width:100%}
 .row-produkt_ubersicht a{text-decoration:none;font-size:20px}
-.produktrow{display:grid;grid-template-columns:2fr 4fr 3fr}
+.produktrow{display:grid;grid-template-columns:2fr 4fr 3fr;grid-gap:32px}
 .produktrow .produktrow--main{padding-right:50px}
 .produktrow .produktrow--main .produkt-button{background:transparent;-webkit-box-shadow:none;box-shadow:none;border:3px solid #0f2962;width:100%;color:#0f2962;padding:20px 30px;font-size:24px;font-family:"Roboto Condensed";cursor:pointer;text-align:center}
 .produktrow .produktrow--main li{font-size:20px}

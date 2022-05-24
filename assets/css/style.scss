@@ -245,6 +245,7 @@ div:not(.row) + .row {
 .produktrow {
 	display: grid;
 	grid-template-columns: 2fr 4fr 3fr;
+	grid-gap: 32px;
 
 	@media (max-width: $breakpoint-phone) {
 		grid-template-columns: 1fr;
