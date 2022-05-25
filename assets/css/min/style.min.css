@@ -23,8 +23,8 @@ h1,h2,h3{-webkit-margin-before:0;margin-block-start:0}
 .nav.navbar-nav.menu__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:all .25s ease-in;transition:all .25s ease-in}
 .nav.navbar-nav.menu__list li{display:inline-block;padding-right:3vw;font-family:"Roboto Condensed",sans-serif}
 .nav.navbar-nav.menu__list a{font-size:20px;color:#fff;text-decoration:none;font-weight:bold}
-.sub-menu{display:none;background-color:rgba(15,41,97,0.88)}
-.sub-menu li{padding:10px}
+.sub-menu{display:none;background-color:rgba(15,41,97,0.88);border-bottom-left-radius:5px;border-bottom-right-radius:5px;-webkit-transform:translateX(-16px) translateY(10px);transform:translateX(-16px) translateY(10px)}
+.sub-menu li{padding:12px 18px}
 .sub-menu li :hover{color:#b4b4b4}
 .sub-menu a:hover{border-bottom:1px solid #e40304}
 .nav li:hover .sub-menu{display:grid;position:absolute;z-index:9999;-webkit-padding-start:0;padding-inline-start:0}
