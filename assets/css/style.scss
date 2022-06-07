@@ -29,6 +29,10 @@ h6 {
 		0% no-repeat padding-box;
 	height: 100px;
 	font-family: "Roboto Condensed", sans-serif;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 99999;
 	.header-inner {
 		display: flex;
 		align-items: center;
@@ -245,6 +249,15 @@ div:not(.row) + .row {
 			max-width: 100%;
 		}
 	}
+        .product-image{
+                height:300px;
+                width:100%;
+                //background cover and center;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+        }
 	a {
 		text-decoration: none;
 		font-size: 20px;
@@ -519,4 +532,64 @@ video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 15%;
+}
+.partner-container{
+        max-width:1200px;
+        margin:0 auto;
+        .partner-list{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+                grid-gap:28px;
+                padding:18px;
+         .partner-item{
+                 padding:24px;
+                display:flex;
+                flex-direction:column;
+                background-color: #c7c7c7;
+                .partner-name{
+                        font-size: 24px;
+                        font-weight:bold;
+                }
+                .partner-position{
+                        padding-bottom: 12px;
+                        border-bottom: black 1px solid;
+                }
+                a{
+                        color:black;
+                        text-decoration:none;
+                }
+                .phone{
+                        display: flex;
+                        margin-top: 12px;
+                        font-size: 20px;
+                       &::before{
+                               display: block;
+                                  content:'';
+                                   width:24px;
+                                   height:24px;
+                                   background-image: url('http://taso.12-05.de/wp-content/uploads/2022/05/icons8-phone-1.svg');
+                                  background-position: center;
+                                  background-repeat: no-repeat;
+                                  background-size: contain;
+                       }
+
+                }
+                .email{
+                        display: flex;
+                        margin-top: 6px;
+                        font-size: 20px;
+                       &::before{
+                               display: block;
+                                  content:'';
+                                   width:24px;
+                                   height:24px;
+                                   background-image: url('http://taso.12-05.de/wp-content/uploads/2022/05/icons8-mail-2.svg');
+                                  background-position: center;
+                                  background-repeat: no-repeat;
+                                  background-size: contain;
+                       }
+
+                }
+         }      
+        }
 }
