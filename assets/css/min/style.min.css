@@ -66,7 +66,7 @@ video{min-width:100%;min-height:50vh;position:absolute;z-index:1;left:50%;top:50
 .menu-active .hamburger-line-middle{left:50%;opacity:0;width:0}
 .hamburger-line-bottom{bottom:3px}
 .menu-active .hamburger-line-bottom{bottom:50%;-webkit-transform:rotate(-45deg) translatey(50%);transform:rotate(-45deg) translatey(50%)}
-.quick-contact-box{position:fixed;display:grid;right:0;z-index:3}
+.quick-contact-box{position:fixed;display:grid;right:0;z-index:3;top:15%}
 .quick-contact-box img{width:75px}
 .quick-contact-box a{cursor:pointer}
 .product-archive,#besatzarten .row:first-of-type{margin-top:10vh}
