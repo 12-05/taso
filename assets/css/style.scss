@@ -595,3 +595,26 @@ video {
          }      
         }
 }
+
+
+.downloads-container{
+        .downloads-item{
+                margin-bottom: 32px;
+                .downloads-ober-title{
+                        font-size: 32px;
+                       color:#0f2962;
+                }
+                .downloads-unter-title{
+                        font-size: 24px;
+                        margin-top: 8px;
+                }
+                .files{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        a{
+                                margin-top: 8px;
+                                font-size: 1rem;
+                        }
+                }
+        }
+}
