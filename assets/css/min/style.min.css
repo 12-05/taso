@@ -69,7 +69,7 @@ video{min-width:100%;min-height:50vh;position:absolute;z-index:1;left:50%;top:50
 .quick-contact-box{position:fixed;display:grid;right:0;z-index:3;top:15%}
 .quick-contact-box img{width:75px}
 .quick-contact-box a{cursor:pointer}
-.product-archive,#besatzarten .row:first-of-type{margin-top:10vh}
+.product-archive,#besatzarten .row:first-of-type{margin-top:15vh}
 .button-startseite{background:transparent;-webkit-box-shadow:none;box-shadow:none;border:3px solid #0f2962;width:100%;color:#0f2962;padding:20px 30px;font-size:24px;font-family:"Roboto Condensed";cursor:pointer;margin-top:30px;text-align:center}
 .page-id-228 .row:first-of-type,.page-id-250 .row:first-of-type{margin-top:120px}
 .page-id-228 input,.page-id-250 input{width:98%;height:40px;font-size:16px;-webkit-padding-start:10px;padding-inline-start:10px}

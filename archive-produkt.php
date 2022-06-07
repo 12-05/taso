@@ -35,6 +35,10 @@ $posts = get_posts(array(
             </div>
 <?php endif; ?>
 	</div><!-- #primary -->
+       
+
+        
+
 
 </div><!-- #main-content -->
 
