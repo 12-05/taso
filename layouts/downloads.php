@@ -5,8 +5,9 @@
             <div class='downloads-ober-title'><?php echo $data['name']?></div>
             <div class='downloads-unter-container'>
             <?php foreach($data['unterkatgorie'] as $unterdata ):?>
+                <div>
                 <?php if($unterdata['name']):?>
-                        <div>
+                      
                         <div class='downloads-unter-title'><?php echo $unterdata['name']?></div><?php endif;?>
                         <div class='files'> 
                         <?php foreach($unterdata['files'] as $file):?>
@@ -15,6 +16,7 @@
                         </div>
                         </div>
             <?php endforeach;?>
+          
              </div>
         </div>
         <?php endforeach;?>
