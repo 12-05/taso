@@ -90,7 +90,6 @@ video{min-width:100%;min-height:50vh;position:absolute;z-index:1;left:50%;top:50
 .downloads-container .downloads-item{margin-bottom:32px}
 .downloads-container .downloads-item .downloads-ober-title{font-size:32px;color:#0f2962}
 .downloads-container .downloads-item .downloads-unter-title{font-size:24px;margin-top:8px}
-.downloads-container .downloads-item .downloads-unter-container{display:grid;grid-template-columns:1fr 1fr 1fr}
 .downloads-container .downloads-item .files{display:grid;grid-template-columns:1fr}
 .downloads-container .downloads-item .files a{margin-top:8px;font-size:1rem}
 .voll-bild img{max-width:1200px;margin-bottom:32px}
