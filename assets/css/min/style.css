@@ -200,7 +200,7 @@ video { min-width: 100%; min-height: 50vh; position: absolute; z-index: 1; left:
 
 .downloads-container .downloads-item .downloads-unter-title { font-size: 24px; margin-top: 8px; }
 
-.downloads-container .downloads-item .downloads-unter-container { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.downloads-container .downloads-item .downloads-unter-container {}
 
 .downloads-container .downloads-item .files { display: grid; grid-template-columns: 1fr; }
 
