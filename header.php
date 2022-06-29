@@ -53,7 +53,7 @@ bloginfo( 'title' );
 
 
 <?php if (get_field('anfrage','option')) { ?>
-<div class="phone--box"><a class="phone--link" href="/kontakt"><?php echo the_field('anfrage','option')?></a></div>
+<div class="phone--box"><div class="phone--link">... und alles ist möglich!</div></div>
 <?php }else{
     echo "" ; 
 } ?>
