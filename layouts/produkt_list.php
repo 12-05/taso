@@ -15,9 +15,17 @@ $posts = get_posts(array(
       
 		<div id="content" class="site-content" role="main">
               
-       <div class="row row-headline">  <div class="row-headline--subline " ><?php the_field('subline_produkte','option') ?></div><h2 class="row-headline--headline"><span class="underline"><?php the_field('uberschrift_produkte','option') ?></span></h2>
+       <div class="row row-headline">
+               <div class="row-headline--subline " >
+                     <?php if(the_field('title')){ the_field('title');}else{ the_field('subline_produkte','option');}?>
+                </div>
+                <h2 class="row-headline--headline">
+                        <span class="underline">
+                        <?php if(the_field('subtitle')){ the_field('title');}else{ the_field('uberschrift_produkte','option');} ?>
+                        </span>
+                </h2>
        
-</div>
+        </div>
 
         <div class="row row-produkt_ubersicht">
 
