@@ -17,11 +17,11 @@ $posts = get_posts(array(
               
        <div class="row row-headline">
                <div class="row-headline--subline " >
-                     <?php if(the_sub_field('subtitle')){ the_sub_field('subtitle');}else{ the_field('subline_produkte','option');}?>
+                     <?php if(get_sub_field('subtitle')){ the_sub_field('subtitle');}else{ the_field('subline_produkte','option');}?>
                 </div>
                 <h2 class="row-headline--headline">
                         <span class="underline">
-                        <?php if(the_sub_field('title')){ the_sub_field('title');}else{ the_field('uberschrift_produkte','option');} ?>
+                        <?php if(get_sub_field('title')){ the_sub_field('title');}else{ the_field('uberschrift_produkte','option');} ?>
                         </span>
                 </h2>
        
