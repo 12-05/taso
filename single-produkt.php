@@ -36,7 +36,7 @@ $produkte = get_posts(array(
 <div class="produktrow--galerie">
 <img class="produktrow--galerie-main_image" src="<?php the_field('hauptbild')?>" />
 <br/>
-<h3 class="produkt-single">Downloads:</h3>
+<?php if( have_rows('downloads') ):?><h3 class="produkt-single">Downloads:</h3><?php endif;?>
 <ul>
 <?php if( have_rows('downloads') ):
 // Loop through rows.
