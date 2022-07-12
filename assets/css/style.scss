@@ -259,6 +259,7 @@ div:not(.row) + .row {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                position: relative;
                 
         }
 	a {
@@ -629,4 +630,12 @@ video {
                 max-width:1200px;
                 margin-bottom: 32px;
         }
+}
+.folge-label{
+        position:absolute;
+        left:0;
+        top:32px;
+        padding:18px;
+        background-color: #0d255d;
+        color:white;
 }

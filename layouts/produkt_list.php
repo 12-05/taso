@@ -31,7 +31,7 @@ $posts = get_posts(array(
 
         <?php if($posts):foreach($posts as $produkt):?>
                 <a href="<?php echo get_permalink($produkt->ID);?>" class="kachel">
-                   <div class='product-image' style="background-image:url(<?php the_field('hauptbild', $produkt->ID); ?>)" ></div>
+                   <?php if (get_field('hauptbild', $produkt->ID)){?><div class='product-image' style="background-image:url(<?php the_field('hauptbild', $produkt->ID); ?>)" ><?php } else{?><div class='product-image' style="background-image:url(http://taso.12-05.de/wp-content/uploads/2022/04/Screenshot-2022-04-28-at-15.07.07.png)" ><div class='folge-label'>Bild folgt</div><?php }?></div>
                    <div class="wrapper_h3"><h3><?php the_field('bezeichnung', $produkt->ID); ?></h3></div>
                 </a>
     <?php endforeach;endif;?>
