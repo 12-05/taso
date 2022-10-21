@@ -84,13 +84,14 @@ video{min-width:100%;min-height:50vh;position:absolute;z-index:1;left:50%;top:50
 .partner-container .partner-list .partner-item .partner-position{padding-bottom:12px;border-bottom:black 1px solid}
 .partner-container .partner-list .partner-item a{color:black;text-decoration:none}
 .partner-container .partner-list .partner-item .phone{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:12px;font-size:20px}
-.partner-container .partner-list .partner-item .phone::before{display:block;content:'';width:24px;height:24px;background-image:url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-phone-1.svg");background-position:center;background-repeat:no-repeat;background-size:contain}
+.partner-container .partner-list .partner-item .phone::before{display:block;content:"";width:24px;height:24px;background-image:url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-phone-1.svg");background-position:center;background-repeat:no-repeat;background-size:contain}
 .partner-container .partner-list .partner-item .email{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:6px;font-size:20px}
-.partner-container .partner-list .partner-item .email::before{display:block;content:'';width:24px;height:24px;background-image:url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-mail-2.svg");background-position:center;background-repeat:no-repeat;background-size:contain}
+.partner-container .partner-list .partner-item .email::before{display:block;content:"";width:24px;height:24px;background-image:url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-mail-2.svg");background-position:center;background-repeat:no-repeat;background-size:contain}
 .downloads-container .downloads-item{margin-bottom:32px}
-.downloads-container .downloads-item .downloads-ober-title{font-size:32px;color:#0f2962}
-.downloads-container .downloads-item .downloads-unter-title{font-size:24px;margin-top:8px}
-.downloads-container .downloads-item .files{display:grid;grid-template-columns:1fr}
+.downloads-container .downloads-item .downloads-ober-title{font-size:32px;color:#0f2962;margin-bottom:12px}
+.downloads-container .downloads-item .downloads-unter-title{font-size:24px}
+.downloads-container .downloads-item .downloads-unter-container{margin-bottom:24px}
+.downloads-container .downloads-item .files{display:-webkit-box;display:-ms-flexbox;display:flex;height:"100%"}
 .downloads-container .downloads-item .files a{margin-top:8px;font-size:1rem}
 .voll-bild img{max-width:1200px;margin-bottom:32px}
 .folge-label{position:absolute;left:0;top:32px;padding:18px;background-color:#0d255d;color:white}
