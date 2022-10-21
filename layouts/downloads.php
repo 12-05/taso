@@ -13,11 +13,11 @@
                 <?php }?>
                 <div>
           
-                        <div class='files'> 
+                        <div class='files' style='flex-wrap:wrap'> 
                         <?php foreach($unterdata['files'] as $file):?>
                         <div style='display:flex;flex-direction:column;margin-right:32px;'>
                                 <iframe scrolling="no" src="<?php echo $file['file']?>" style="width: 100px;height:100%;border: none;"></iframe>
-                                <a target='_blank' href='<?php echo $file['file']?>'><?php echo $file['filename']?></a>
+                                <a target='_blank' href='<?php echo $file['file']?>' style='max-width:100px'><?php echo $file['filename']?></a>
                         </div>
                         <?php endforeach;?>
                         </div>
