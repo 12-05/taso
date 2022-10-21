@@ -3,17 +3,14 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <?php if ( is_singular() && pings_open() ) { ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php }
 wp_head(); ?>
 
 <link href="https://fonts.12-05.com/roboto/style.css" rel="stylesheet">
-<link href="https://fonts.12-05.com/lato/style.css rel="stylesheet">
+<link href="https://fonts.12-05.com/lato/style.css" rel="stylesheet">
 <script> 
 function myFunc(){
 const menu = document.getElementById("menu-menu-1");
