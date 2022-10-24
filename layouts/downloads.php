@@ -7,17 +7,17 @@
             <?php foreach($data['unterkatgorie'] as $unterdata ):?>
                 <?php if($unterdata['name']):?>
                         <div class='downloads-unter-title'><?php echo $unterdata['name']?></div><?php endif;?>
-                <div style='margin-top:12px;margin-bottom:32px;display:flex;margin-right:72px'>
+                <div class='downloads-unter-container-box' style='margin-top:12px;display:flex;margin-bottom:32px;margin-right:72px'>
                 <?php if($unterdata['bild']){?>
                    <div src='<?php echo $unterdata['bild'] ?>' style='width:300px;height:250px;margin-right:12px;background-size:cover;background-position:center;background-image:url(<?php echo $unterdata['bild']?>)'></div>
                 <?php }?>
                 <div>
           
-                        <div class='files' style='flex-wrap:wrap'> 
+                        <div class='files' style='flex-wrap:wrap;max-width:800px;'> 
                         <?php foreach($unterdata['files'] as $file):?>
-                        <div style='display:flex;flex-direction:column;margin-right:32px;'>
+                        <div  style='display:flex;flex-direction:column;margin-right:32px;'>
                                 <iframe scrolling="no" src="<?php echo $file['file']?>" style="width: 100px;height:100%;border: none;"></iframe>
-                                <a target='_blank' href='<?php echo $file['file']?>' style='max-width:120px'><?php echo $file['filename']?></a>
+                                <a target='_blank' href='<?php echo $file['file']?>' style='max-width:120px;font-size:0.8rem'><?php echo $file['filename']?></a>
                         </div>
                         <?php endforeach;?>
                         </div>
