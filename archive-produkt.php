@@ -15,7 +15,7 @@ $posts = get_posts(array(
       
 		<div id="content" class="site-content" role="main">
               
-       <div class="row row-headline">   <a style='display:block;margin-top:-5vh;margin-bottom:5vh;color:#0f2962' href='/'>Zurück</a> <div class="row-headline--subline " ><?php the_field('subline_produkte','option') ?></div><h2 class="row-headline--headline"><span class="underline"><?php the_field('uberschrift_produkte','option') ?></span></h2>
+       <div class="row row-headline">   <a style='display:block;margin-top:-5vh;margin-bottom:5vh;color:#0f2962' href='/'>Zurück</a> <div class="row-headline--subline " ><?php the_field('subline_produkte','option') ?></div><h2 class="row-headline--headline"><div class="underline"><?php the_field('uberschrift_produkte','option') ?></div></h2>
        
 </div>
 
