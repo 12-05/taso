@@ -2,7 +2,7 @@
 
     <div class="row row-bildtext">
          <?php if (get_sub_field('uberschrift')):?>
-         <h4 class="row-headline--headline"><span class="underline"><?php echo the_sub_field('uberschrift') ?></span></h4>
+         <h4 class="row-headline--headline"><div class="underline"><div style='position:relative'><?php echo the_sub_field('uberschrift') ?></div></div></h4>
 <?php endif; ?>
 <?php if (get_sub_field('bild')): ?>
            <div class="bildtext-inner">
