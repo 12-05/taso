@@ -17,7 +17,8 @@
                         <div class='files' style='flex-wrap:wrap;max-width:800px;'> 
                         <?php foreach($unterdata['files'] as $file):?>
                         <div  style='display:flex;flex-direction:column;margin-right:32px;'>
-				<?php 
+				<?php
+				if(!$file['file']) continue;
 				$image = wp_get_attachment_image_src( $file['file'], 'medium' );#
 				?>
                               	<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
