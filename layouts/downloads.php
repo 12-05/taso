@@ -18,7 +18,7 @@
                         <?php foreach($unterdata['files'] as $file):?>
                         <div  style='display:flex;flex-direction:column;margin-right:32px;'>
 				<?php
-				if($file['file']) {?>
+				if($file['file']) {
 				$image = wp_get_attachment_image_src( $file['file'], 'medium' );#
 				?>
                               	<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
