@@ -18,13 +18,11 @@
                         <?php foreach($unterdata['files'] as $file):?>
                         <div  style='display:flex;flex-direction:column;margin-right:32px;'>
 				<?php
-				if($file['file']) {
-				$image = wp_get_attachment_image_src( $file['file'], 'medium' );#
+				$image = wp_get_attachment_image_src( $file['file'], 'medium' );
 				?>
                               	<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
                                 <a target='_blank' href='<?php echo wp_get_attachment_url($file['file']); ?>' style='max-width:120px;font-size:0.8rem'><?php echo $file['filename']?></a>
 				
-				<?php } ?>;
 				
                         </div>
                         <?php endforeach;?>
