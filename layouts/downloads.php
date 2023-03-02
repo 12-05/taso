@@ -17,10 +17,15 @@
                         <div class='files' style='flex-wrap:wrap;max-width:800px;'> 
                         <?php foreach($unterdata['files'] as $file):?>
                         <div  style='display:flex;flex-direction:column;margin-right:32px;'>
-                                <?php if($firefox!==FALSE){}else{?>
-                                <iframe scrolling="no" src="<?php echo $file['file']?>" style="width: 100px;height:100%;border: none;"></iframe>
-                                <?php }?>
-                                <a target='_blank' href='<?php echo $file['file']?>' style='max-width:120px;font-size:0.8rem'><?php echo $file['filename']?></a>
+				<?php 
+				$image = wp_get_attachment_image_src( $file['file'], 'medium' );
+				?>
+				<?php if($image) {?>
+					<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
+				<?php } ?> 
+                                <a target='_blank' href='<?php echo wp_get_attachment_url($file['file']); ?>' style='max-width:120px;font-size:0.8rem'><?php echo $file['filename']?></a>
+				
+				
                         </div>
                         <?php endforeach;?>
                         </div>

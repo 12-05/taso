@@ -6,8 +6,7 @@
 
 <?php if ( is_singular() && pings_open() ) { ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<?php }
-wp_head(); ?>
+<?php } ?>
 
 <link href="https://fonts.12-05.com/roboto/style.css" rel="stylesheet">
 <link href="https://fonts.12-05.com/lato/style.css" rel="stylesheet">
@@ -17,6 +16,7 @@ const menu = document.getElementById("menu-menu-1");
 menu.classList.toggle("active");
 }
 </script>
+<?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
 <header id="header" class="clearfix" role="banner">
