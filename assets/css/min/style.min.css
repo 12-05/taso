@@ -103,7 +103,7 @@ video{min-width:100%;min-height:65vh;position:absolute;z-index:1;left:50%;top:50
 .nav.navbar-nav.menu__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;right:0;bottom:0;left:0;-webkit-transform:translateX(100%);transform:translateX(100%);text-align:center;height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around;padding:64px 0;margin:0}
 .nav.navbar-nav.menu__list li{padding:0}
 .nav.navbar-nav.menu__list .sub-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.nav.navbar-nav.menu__list .sub-menu li{padding:4px 0}
+.nav.navbar-nav.menu__list .sub-menu li{padding-top:16px}
 .menu-active .nav.navbar-nav.menu__list{-webkit-transform:translateX(0);transform:translateX(0);height:100vh;background-color:#2b50a5}
 .row-produkt_ubersicht{grid-template-columns:1fr}
 .row-produkt_ubersicht h3{font-size:24px}
