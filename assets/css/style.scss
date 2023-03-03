@@ -165,21 +165,25 @@ h3 {
 		transform: translateX(100%);
 		text-align: center;
 		height: 100vh;
-		ul {
-			margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 64px 0;
+		margin: 0;
+		li {
 			padding: 0;
+		}
+		.sub-menu {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 			li {
-				text-align: center;
-				margin: 16px;
+				padding: 4px 0;
 			}
 		}
+
 		.menu-active & {
 			transform: translateX(0%);
-
 			height: 100vh;
 			background-color: #2b50a5;
 		}
@@ -628,6 +632,9 @@ video {
 	img {
 		max-width: 1200px;
 		margin-bottom: 32px;
+		@media (max-width: $breakpoint-phone) {
+			max-width: 100%;
+		}
 	}
 }
 .folge-label {
@@ -650,7 +657,6 @@ video {
 	}
 
 	.active {
-		display: grid !important;
 		opacity: 1 !important;
 		background: transparent linear-gradient(180deg, #2b50a5 0, #0d255d 100%) 0 0
 			no-repeat padding-box;
@@ -687,5 +693,14 @@ video {
 	p,
 	li {
 		font-size: 14px;
+	}
+
+	#menu-item-266 {
+		.sub-menu {
+			display: none;
+		}
+	}
+	.sub-menu {
+		background-color: transparent;
 	}
 }
