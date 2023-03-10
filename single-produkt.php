@@ -39,14 +39,22 @@ $produkte = get_posts(array(
 <?php if( have_rows('downloads') ):?><h3 class="produkt-single">Downloads:</h3><?php endif;?>
 <ul>
 <?php if( have_rows('downloads') ):
-// Loop through rows.
-while( have_rows('downloads') ) : the_row(); ?>
+ $data=get_field('downloads');
+foreach($data as $file): ?>
 
 
 
-<li> <a target="_blank" href="<?php the_sub_field('datei') ?>" ><?php the_sub_field('dateiname')?></a></li>
+<li> 
+<?php 
+				$image = wp_get_attachment_image_src($file['datei'], 'medium' );
+				?>
+				<?php if($image) {?>
+					<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
+				<?php } ?>         
 
-<?php endwhile; ?>
+<a target="_blank" href="<?php echo $file['datei'] ?>" ><?php echo $file['dateiname']?></a></li>
+
+<?php endforeach; ?>
 
 
 <?php else :?>
