@@ -37,20 +37,16 @@ $produkte = get_posts(array(
 <img class="produktrow--galerie-main_image" src="<?php the_field('hauptbild')?>" />
 <br/>
 <?php if( have_rows('downloads') ):?><h3 class="produkt-single">Downloads:</h3><?php endif;?>
-<ul>
+<ul style='display:flex;flex-wrap:wrap;'>
 <?php if( have_rows('downloads') ):
  $data=get_field('downloads');
 foreach($data as $file): ?>
 
 
 
-<li> 
-<?php 
-				$image = wp_get_attachment_image_src($file['datei'], 'medium' );
-				?>
-				<?php if($image) {?>
-					<img src="<?php echo $image[0];?>" width="150" alt="Preview" />
-				<?php } ?>         
+<li style='display:flex;flex-direction:column;margin-top:20px;margin-right:20px;'> 
+<iframe src="<?php echo $file['datei'] ?>" style="width:100px; height:150px;" ></iframe>
+     
 
 <a target="_blank" href="<?php echo $file['datei'] ?>" ><?php echo $file['dateiname']?></a></li>
 
