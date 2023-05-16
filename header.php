@@ -49,7 +49,7 @@ bloginfo( 'title' );
 
 
 <?php if (get_field('anfrage','option')) { ?>
-<div class="phone--box"><div class="phone--link">... und alles ist möglich!</div></div>
+<div class="phone--box"><div class="phone--link"><?php the_field('menu_text','option')?></div></div>
 <?php }else{
     echo "" ; 
 } ?>
