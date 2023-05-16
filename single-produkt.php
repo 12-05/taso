@@ -45,8 +45,12 @@ foreach($data as $file): ?>
 
 
 <li style='display:flex;flex-direction:column;margin-top:20px;margin-right:20px;'> 
-<iframe src="<?php echo $file['datei'] ?>" style="width:100px; height:150px;" ></iframe>
-     
+<?php 
+				$image = wp_get_attachment_image_src( $file['datei'], 'medium' );
+				?>
+				<?php if($image) {?>
+					<img src="<?php echo $image[0];?>" width="100" height='150' alt="Preview" />
+				<?php } ?> 
 
 <a target="_blank" href="<?php echo $file['datei'] ?>" ><?php echo $file['dateiname']?></a></li>
 
