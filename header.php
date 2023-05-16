@@ -7,6 +7,7 @@
 <?php if ( is_singular() && pings_open() ) { ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php } ?>
+<?php _e('... und alles ist möglich!', 'golo-framework'); ?>
 
 <link href="https://fonts.12-05.com/roboto/style.css" rel="stylesheet">
 <link href="https://fonts.12-05.com/lato/style.css" rel="stylesheet">
@@ -49,7 +50,7 @@ bloginfo( 'title' );
 
 
 <?php if (get_field('anfrage','option')) { ?>
-<div class="phone--box"><div class="phone--link"><?php the_field('menu_text','option')?></div></div>
+<div class="phone--box"><div class="phone--link"><?php  echo pll_e(the_field('menu_text','option')) ?></div></div>
 <?php }else{
     echo "" ; 
 } ?>

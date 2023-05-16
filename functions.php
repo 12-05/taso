@@ -97,3 +97,5 @@ function fwp_archive_per_page( $query ) {
 add_filter( 'pre_get_posts', 'fwp_archive_per_page' );
 
 add_theme_support( 'title-tag' );
+
+pll_register_string('golo-framework', '... und alles ist möglich!', 'true');
