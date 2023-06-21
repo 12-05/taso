@@ -52,7 +52,7 @@ foreach($data as $file): ?>
 					<img src="<?php echo $image[0];?>" width="100" height='150' alt="Preview" />
 				<?php } ?> 
 
-<a target="_blank" href="<?php echo wp_get_attachment_url($file['datei'], 'full')[0]; ?>" ><?php echo $file['dateiname']?></a></li>
+<a target="_blank" href="<?php echo wp_get_attachment_url($file['datei']); ?>" ><?php echo $file['dateiname']?></a></li>
 
 <?php endforeach; ?>
 
