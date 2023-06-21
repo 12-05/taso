@@ -49,7 +49,9 @@ foreach($data as $file): ?>
 				$image = wp_get_attachment_image_src( $file['datei'], 'medium' );
 				?>
 				<?php if($image) {?>
-					<img src="<?php echo $image[0];?>" width="100" height='150' alt="Preview" />
+						  <a target="_blank" href="<?php echo wp_get_attachment_url($file['datei']); ?>" >					<img src="<?php echo $image[0];?>" width="100" height='150' alt="Preview" />
+</a></li>
+
 				<?php } ?> 
 
 <a target="_blank" href="<?php echo wp_get_attachment_url($file['datei']); ?>" ><?php echo $file['dateiname']?></a></li>
