@@ -46,10 +46,10 @@ $produkte = get_posts(array(
 	<?php 
 	foreach($downloads as $download) {?>
 <li style='display:flex;flex-direction:column;margin-top:20px;margin-right:20px;'>
-<?php $image = wp_get_attachment_image_src( $file['datei'], 'medium' );?>
+<?php $image = wp_get_attachment_image_src( $download['datei'], 'medium' );?>
 <img src="<?php echo $image[0];?>" width="100" height='150' alt="Preview" />
-<a target="_blank" href="<?php echo wp_get_attachment_url($file['datei']); ?>" >
-<?php echo $file['dateiname']?></a>
+<a target="_blank" href="<?php echo wp_get_attachment_url($download['datei']); ?>" >
+<?php echo $download['dateiname']?></a>
 </li>
 <?php } ?> 
 	</ul>
