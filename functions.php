@@ -104,7 +104,16 @@ add_filter( 'pre_get_posts', 'fwp_archive_per_page' );
 
 add_theme_support( 'title-tag' );
 
-if(function_exists('pll_register_string)) { 
-pll_register_string('golo-framework', '... und alles ist möglich!', 'true');
 
+
+
+function your_prefix_after_setup_theme() {
+
+   // register our translatable strings - again first check if function exists.
+
+    	if ( function_exists( 'pll_register_string' ) ) {
+
+		pll_register_string('golo-framework', '... und alles ist möglich!', 'true');
+	}
 }
+ add_action( 'after_setup_theme', 'your_prefix_after_setup_theme' );
