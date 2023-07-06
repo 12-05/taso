@@ -7,7 +7,6 @@
 <?php if ( is_singular() && pings_open() ) { ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php } ?>
-<?php _e('... und alles ist möglich!', 'golo-framework'); ?>
 
 <link href="https://fonts.12-05.com/roboto/style.css" rel="stylesheet">
 <link href="https://fonts.12-05.com/lato/style.css" rel="stylesheet">
