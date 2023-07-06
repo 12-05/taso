@@ -50,7 +50,7 @@ bloginfo( 'title' );
 
 
 <?php if (get_field('anfrage','option')) { ?>
-<?php if(function_exists('pll_e') {?>
+<?php if(function_exists('pll_e')) {?>
 <div class="phone--box"><div class="phone--link"><?php  echo pll_e('... und alles ist möglich!') ?></div></div>
 	<?php } ?>
 <?php }else{
