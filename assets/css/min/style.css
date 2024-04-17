@@ -190,11 +190,11 @@ video { min-width: 100%; min-height: 65vh; position: absolute; z-index: 1; left:
 
 .partner-container .partner-list .partner-item .phone { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 12px; font-size: 20px; }
 
-.partner-container .partner-list .partner-item .phone::before { display: block; content: ""; width: 24px; height: 24px; background-image: url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-phone-1.svg"); background-position: center; background-repeat: no-repeat; background-size: contain; }
+.partner-container .partner-list .partner-item .phone::before { display: block; content: ""; width: 24px; height: 24px; background-image: url("https://www.taso-solingen.de/wp-content/uploads/2022/05/icons8-phone-1.svg"); background-position: center; background-repeat: no-repeat; background-size: contain; }
 
 .partner-container .partner-list .partner-item .email { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 6px; font-size: 20px; }
 
-.partner-container .partner-list .partner-item .email::before { display: block; content: ""; width: 24px; height: 24px; background-image: url("http://taso.12-05.de/wp-content/uploads/2022/05/icons8-mail-2.svg"); background-position: center; background-repeat: no-repeat; background-size: contain; }
+.partner-container .partner-list .partner-item .email::before { display: block; content: ""; width: 24px; height: 24px; background-image: url("https://www.taso-solingen.de/wp-content/uploads/2022/05/icons8-mail-2.svg"); background-position: center; background-repeat: no-repeat; background-size: contain; }
 
 .downloads-container .downloads-item { margin-bottom: 32px; }
 
