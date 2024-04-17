@@ -8,7 +8,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 <?php }?>
 
-<link href="https://www.taso-solingen.de/wp-content/themes/taso/style.css" rel="stylesheet">
+<link href="https://www.taso-solingen.de/wp-content/themes/taso/fonts/style.css" rel="stylesheet">
 <script>
 function myFunc(){
 const menu = document.getElementById("menu-menu-1");
