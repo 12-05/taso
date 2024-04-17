@@ -9,7 +9,6 @@
 <?php } ?>
 
 <link href="https://fonts.12-05.com/roboto/style.css" rel="stylesheet">
-<link href="https://fonts.12-05.com/lato/style.css" rel="stylesheet">
 <script> 
 function myFunc(){
 const menu = document.getElementById("menu-menu-1");
