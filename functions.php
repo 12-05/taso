@@ -3,7 +3,7 @@
 function wpdocs_theme_name_scripts()
 {
     wp_enqueue_style('taso-style', get_template_directory_uri() . '/assets/css/min/style.min.css');
-    wp_enqueue_script('taso-navigation', get_template_directory_uri() . '/assets/js/navigations.js');
+    wp_enqueue_script('taso-navigation', get_template_directory_uri() . '/assets/css/js/navigations.js', array('jquery'));
 
 }
 add_action('wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
