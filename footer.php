@@ -12,7 +12,7 @@
            <li class="adresse-plzort"><?php echo the_sub_field('plz_ort','option')?></li><br/>
            <?php endwhile; ?>
            <?php endif; ?> 
-           <li class="footer--kontakt-li">Fon: <span><a href="tel:<?php the_field('telefon','option') ?>"> <?php echo the_field('telefon','option')?></a></span></li>
+           <li class="footer--kontakt-li">Tel.: <span><a href="tel:<?php the_field('telefon','option') ?>"> <?php echo the_field('telefon','option')?></a></span></li>
            <li class="footer--kontakt-li">Fax: <span><a href="tel:<?php the_field('fax','option') ?>"> <?php echo the_field('fax','option')?></a></span> </li><br/>
            <li class="footer--kontakt-li">E-Mail: <a href="mailto:<?php the_field('e-mail','option') ?>"> <?php echo the_field('e-mail','option')?></a></li>
          </ul>
@@ -46,7 +46,7 @@ bloginfo( 'title' );
           
         
    </div><!-- footer -->
-   <div class="footer-copyright">2022 Ⓒ TASO Thaler jun. GmbH</div> 
+   <div class="footer-copyright">2022 Ⓒ TASO Fritz Thaler Jun. GmbH</div> 
 
 </div><!-- wrapper -->
 
