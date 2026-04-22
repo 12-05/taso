@@ -46,7 +46,7 @@ bloginfo( 'title' );
           
         
    </div><!-- footer -->
-   <div class="footer-copyright">2022 Ⓒ TASO Fritz Thaler Jun. GmbH</div> 
+   <div class="footer-copyright"><?php echo date('Y');?> Ⓒ TASO Fritz Thaler Jun. GmbH</div> 
 
 </div><!-- wrapper -->
 
